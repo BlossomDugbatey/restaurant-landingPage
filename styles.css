@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Hind', sans-serif;
+}
+
+#wrap {
+    overflow: hidden;
+}
+
+/* #wrap {
+    position: sticky;
+} */
+nav {
+    display: flex;
+    justify-content: space-between;
+    top: 60px;
+    font-weight: lighter;
+    font-size: 15px;
+    bottom: 40px;
+}
+
+.logo {
+    height: 50px;
+    width: 120px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2.5em;
+    margin: 35px;
+}
+
+nav ul li a {
+    color: rgb(235, 227, 217);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(3, 104, 187);
+}
+
+header {
+    background-image: url('restaurant.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 170vh;
+    margin-top: -95px;
+    margin-left: -150px;
+
+}
+
+.text {
+    padding: 250px;
+    padding-top: 150px;
+}
+
+.text p {
+    font-size: 70px;
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
+.text h2 {
+    font-style: bold;
+    font-size: 120px;
+
+}
+
+.container {
+    display: flex;
+    /* justify-items: center; */
+    gap: 2.0em;
+    margin-left: 250px;
+    width: 90px;
+    margin-top: -30px;
+
+}
+
+.content {
+    background: rgb(255, 255, 255);
+    background-size: 80px;
+    height: 20em;
+    width: 30em;
+    border: 20px;
+    color: black;
+    text-align: center;
+}
+
+.content p {
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 30px;
+    line-height: 0.1em;
+    text-align: center;
+}
+
+
+img {
+    height: 12em;
+    width: 15em;
+    padding: 8px;
+}
+
+section {
+    background-color: rgb(202, 202, 202);
+    height: 90vh;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.discovery h5 {
+    font-size: 40px;
+    color: black;
+    font-weight: 1;
+    text-align: center;
+    padding: 120px;
+}
+
+.discovery p {
+    color: rgb(78, 78, 78);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-top: -70px;
+}
+
+.discovery img {
+    width: 60em;
+    height: 15em;
+    margin-left: 10em;
+    margin-top: 100px;
+}
+
+article {
+    background-image: url('checked_menu.jpg');
+    background-size: cover;
+    height: 43em;
+    background-attachment: fixed;
+}
+
+article p {
+    font-size: 60px;
+    margin-left: 60px;
+    padding-top: 170px;
+    line-height: 1.2em;
+}
+
+article p span {
+    font-size: 60px;
+    font-weight: 10;
+}
+
+.info {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: -0.8px;
+    color: #cecccc;
+    font-weight: 300;
+    font-style: normal;
+    padding-top: 70px;
+}
+
+.menu {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 23px 50px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 400;
+    background: #ffb647;
+    border-radius: 8px;
+    border: 0;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.menu:hover {
+    background: #e48e38;
+}
+
+.info-container {
+    background-image: url('pattern-bg2.png');
+    color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-between;
+    height: 145vh;
+    background-size: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.info-container ul {
+    list-style-type: none;
+    align-items: center;
+    padding: 50px;
+}
+
+.info-container ul li {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.info-container ul li h5 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 2.5em;
+}
+
+.info-container ul li p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.rating {
+    background-image: url('bg21.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-position: center;
+}
+
+.rating ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding-top: 8em;
+}
+
+.rating p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    padding: 2em;
+}
+
+.rating small {
+    font-family: 'Hind', sans-serif;
+    opacity: 0.5;
+    text-align: center;
+    padding: 45em;
+}
+
+.countdown {
+    height: 32em;
+    background-image: url("bg5.jpeg");
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    padding: 157px;
+}
+
+/* .countdown .material-icons {
+    opacity: 0.3;
+} */
+
+.numbers {
+    font-size: 65px;
+    font-weight: lighter;
+
+}
+
+.countdown p {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.booking {
+    background-image: url("bg36.jpeg");
+    height: 55em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book_title {
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    line-height: 3.5;
+    /* line-height: 1.2; */
+}
+
+.booking form{
+    padding: 80px;
+    line-height: 4;
+}
+
+.form{
+    width: 400px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 15px;
+    color: white;
+}
+
+.form:focus {
+    outline: none;
+}
+
+.booking hr{
+    opacity: 0.3;
+    /* width: 90px; */
+}
+
+.book {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 18px 250px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 400;
+    background: #ffb647;
+    border-radius: 8px;
+    border: 0;
+    margin-left: 80px;
+    /* margin-top: 20px; */
+    text-align: center;
+}
+
+.book:hover {
+    background: #e99a4b;
+}
+
+.book_info {
+    line-height: 1.5;
+    padding: 250px 0px 20px 0px;
+    margin-right: 80px;
+}
+
+.book_info p {
+    font-size: 17px;
+}
+
+.schedule {
+    display: block;
+    gap: 1.5em;
+    /* padding-top: 40px;  */
+}
+
+.schedule i {
+    opacity: 0.4;
+    padding: 20px;
+}
+
+footer {
+    background: #252830;
+    display: flex;
+    justify-content: space-between;
+    height: 10em;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+    /* opacity: 0.3; */
+}
+
+footer img {
+    width: 70px;
+    height: 70px;
+}
