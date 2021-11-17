@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <title>Select-restaurant</title>
 </head>
@@ -15,19 +16,19 @@
 
     <div id="wrap">
         <nav>
-            <img class="logo" href="#" src="restaurant_logo.png" alt="logo">
+            <a href="#connect"><img class="logo" src="/assets/restaurant_logo.png" alt="logo"></a>
             <ul>
-                <li><a href="">Our Story</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Testimonials</a></li>
-                <li><a href="">Book a Table</a></li>
+                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#menu-Order">Menu</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#bookAtable">Book a Table</a></li>
             </ul>
         </nav>
 
     </div>
 
-    <header>
+    <header id="connect">
 
         <div class="text">
             <p>Because</p>
@@ -37,28 +38,28 @@
         <div class="container">
 
             <div class="content">
-                <img src="post-img-food-1.jpeg" alt="food">
+                <img src="/assets/post-img-food-1.jpeg" alt="food">
                 <p>Chips & Fish -</p>
                 <p><b>$7.99</b></p>
 
             </div>
 
             <div class="content">
-                <img src="post-img-food-2.jpeg" alt="food">
+                <img src="/assets/post-img-food-2.jpeg" alt="food">
                 <p>Chef Salad -</p>
                 <p><b>$2.99</b></p>
 
             </div>
 
             <div class="content">
-                <img src="post-img-food-3.jpeg" alt="food">
+                <img src="/assets/post-img-food-3.jpeg" alt="food">
                 <p>Grilled Steak -</p>
                 <p><b>$14.99</b></p>
 
             </div>
 
             <div class="content">
-                <img src="post-img-food-4.jpeg" alt="food">
+                <img src="/assets/post-img-food-4.jpeg" alt="food">
                 <p>Roast Chicken-</p>
                 <p><b>$9.99</b></p>
 
@@ -68,33 +69,33 @@
         </div>
     </header>
 
-    <section>
+    <section id = 'our-story'>
         <div class="discovery">
             <h5>Discover Our Story</h5>
             <p>In our work we try to use only the most modern,
                 convenient and interesting <br>solutions.
                 We want the template you downloaded look unique and new for <br>such a long time as it is possible.</p>
-            <img src="discovery-bg.png" alt="buildings">
+            <img src="/assets/discovery-bg.png" alt="buildings">
         </div>
     </section>
 
-    <article>
+    <article id = 'menu-Order'>
         <p><span>WHAT TO EAT?</span><br><b>ENJOY YOUR MENU</b></p>
         <p class="info">More than 250 dishes and 300 drinks for you.</p>
         <button class="menu"><i class="material-icons">menu_book</i>View Menu</button>
     </article>
 
-    <div class="info-container">
+    <div id = 'features' class="info-container">
         <ul>
             <li>
-                <img src="hot_food.png" alt="hot food">
+                <img src="/assets/hot_food.png" alt="hot food">
                 <h5>Fully Responsive</h5>
                 <p>Your project looks great on any device.
                     Content can be easily read and a user understands freely what you wanted to say him or her.</p>
             </li>
 
             <li>
-                <img src="feature-food2.png" alt="food2">
+                <img src="/assets/feature-food2.png" alt="food2">
                 <h5>PSD Is Included</h5>
                 <p>The graphic source file in PSD format is included in the archive.</p>
             </li>
@@ -103,7 +104,7 @@
 
         <ul>
             <li>
-                <img src="feature-food3.png" alt="food3">
+                <img src="/assets/feature-food3.png" alt="food3">
                 <h5>Pure and Simple</h5>
                 <p>No fluff. Nothing should lead the visitor away from the main essence of website.
                     There must be just important information.
@@ -111,7 +112,7 @@
             </li>
 
             <li>
-                <img src="feature-food4.png" alt="food4">
+                <img src="/assets/feature-food4.png" alt="food4">
                 <h5>Documentation</h5>
                 <p>The detailed documentation will help you in adjusting the project with little effort according to
                     your requirements.</p>
@@ -122,14 +123,14 @@
 
         <ul>
             <li>
-                <img src="feature-food5.png" alt="food5">
+                <img src="/assets/feature-food5.png" alt="food5">
                 <h5>Color Schemes</h5>
                 <p>The set of ready made CSS files with different color schemes will help you in quick landing’s
                     adaptation according to your benchmark style.</p>
             </li>
 
             <li>
-                <img src="feature-food6.png" alt="food6">
+                <img src="/assets/feature-food6.png" alt="food6">
                 <h5>Multiplatform</h5>
                 <p>The page is adapted to the most of the popular platform in segment.</p>
             </li>
@@ -137,7 +138,7 @@
 
     </div>
 
-    <div class="rating">
+    <div id='testimonials' class="rating">
         <ul>
             <li><i class="material-icons" style="color:#ffd200; font-size:45px;">star_outline</i></i></li>
             <li><i class="material-icons" style="color:#ffd200; font-size:45px;">star_outline</i></i></li>
@@ -157,32 +158,32 @@
 
     <div class="countdown">
         <div>
-            <i class="material-icons" style="color:#555; font-size: 70px;">menu_book</i>
+            <i class="material-icons">menu_book</i>
             <h3 class="numbers">256</h3>
             <p>Dishes</p>
         </div>
 
         <div>
-            <i class="material-icons" style="color:#555; font-size: 70px;">wine_bar</i>
+            <i class="material-icons">wine_bar</i>
             <h3 class="numbers">309</h3>
             <p>Drinks</p>
         </div>
 
         <div>
-            <i class="material-icons" style="color:#555; font-size: 70px;">sentiment_very_satisfied</i>
+            <i class="material-icons">sentiment_very_satisfied</i>
             <h3 class="numbers">721</h3>
             <p>Happy Clients</p>
         </div>
 
         <div>
-            <i class="material-icons" style="color:#555; font-size: 70px;">favorite_border</i>
+            <i class="material-icons">favorite_border</i>
             <h3 class="numbers">378</h3>
             <p>Likes</p>
         </div>
 
     </div>
 
-    <div class="booking">
+    <div id = 'bookAtable' class="booking">
         <div class="book_a_table">
             <form>
                 <h2 class="book_title">Book a Table</h2>
@@ -221,46 +222,45 @@
 
     </div>
 
+    <footer>
+        <div class="design">
+            <img src="/assets/footer-logo.png" alt="select logo">
+            <span>&copy 2021 Select<br>Designed by Bloh_</span>
+        </div>
+    
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="#"><i class='fab fa-twitter'></i></a>
+                    
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-facebook'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-behance'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-google-plus-g'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-linkedi'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-instagram'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-pinterest'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-flickr'></i></a>
+                </li>
+            </ul>
+        </div>
+    
+    </footer>
+
 
 
 </body>
-
-<footer>
-    <div>
-        <img src="footer-logo.png" alt="select logo">
-        <p>& copy 2021 Select<br>Designed by Bloh_</p>
-    </div>
-
-    <div>
-        <ul>
-            <li>
-                <a href="#"><i class='fab fa-twitter' style='font-size:48px; color: rgb(247, 247, 247);'></i></a>
-                
-            </li>
-            <li>
-                <a href="#"><i class='fab fa-facebook' style='font-size:48px; color: rgb(247, 247, 247)'></i></a>
-            </li>
-            <li>
-                <a href="#"><i class='fab fa-behance' style='font-size:48px; color: rgb(247, 247, 247)'></i></a>
-            </li>
-            <li>
-                <a href="#"><i class='fab fa-google-plus-g' style='font-size:48px; color: rgb(247, 247, 247)'></i></a>
-            </li>
-            <li>
-                <a href="#"><i class='fab fa-linkedin' style='font-size:48px;color: rgb(247, 247, 247)'></i></a>
-            </li>
-            <li>
-                <a href="#"><i class='fab fa-instagram' style='font-size:48px;color: rgb(247, 247, 247)'></i></a>
-            </li>
-            <li>
-                <a href="#"><i class='fab fa-pinterest' style='font-size:48px;color: rgb(247, 247, 247)'></i></a>
-            </li>
-            <li>
-                <a href="#"><i class='fab fa-flickr' style='font-size:48px;color: rgb(247, 247, 247)'></i></a>
-            </li>
-        </ul>
-    </div>
-
-</footer>
-
 </html>

@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     color: rgb(255, 255, 255);
@@ -11,7 +14,11 @@ body {
 }
 
 #wrap {
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: sticky;
+    top: 0;
+    /* background-color: #252830; */
+    height: 60px;
 }
 
 /* #wrap {
@@ -20,24 +27,30 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    top: 60px;
+    /* top: 20px; */
     font-weight: lighter;
     font-size: 15px;
-    bottom: 40px;
+    /* bottom: 40px; */
+    /* position: sticky; */
+    /* top: 0; */
+    /* gap: 25em; */
+
 }
 
 .logo {
-    height: 50px;
-    width: 120px;
-    margin-left: 35px;
-    margin-top: 30px;
+    height: 45px;
+    width: 130px;
+    margin-left: 15px;
+    margin-top: 10px;
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
     gap: 2.5em;
-    margin: 35px;
+    margin-top: 25px;
+    margin-right: 40px;
+    font-size: 13px;
 }
 
 nav ul li a {
@@ -46,34 +59,37 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(3, 104, 187);
+    color: rgb(102, 179, 243);
 }
 
 header {
-    background-image: url('restaurant.jpg');
+    background-image: url('/assets/restaurant.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 170vh;
-    margin-top: -95px;
-    margin-left: -150px;
+    margin-top: -75px;
+    /* margin-left: -150px; */
 
 }
 
 .text {
     padding: 250px;
     padding-top: 150px;
+    margin-left: -170px;
 }
 
 .text p {
-    font-size: 70px;
-    font-weight: lighter;
+    font-size: 60px;
+    font-weight: 100;
     margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 .text h2 {
     font-style: bold;
-    font-size: 120px;
+    font-size: 100px;
 
 }
 
@@ -81,7 +97,7 @@ header {
     display: flex;
     /* justify-items: center; */
     gap: 2.0em;
-    margin-left: 250px;
+    margin-left: 120px;
     width: 90px;
     margin-top: -30px;
 
@@ -112,8 +128,8 @@ img {
     padding: 8px;
 }
 
-section {
-    background-color: rgb(202, 202, 202);
+section #our-story {
+    /* background-color:; */
     height: 90vh;
     font-family: 'Roboto', sans-serif;
 
@@ -121,8 +137,8 @@ section {
 
 .discovery h5 {
     font-size: 40px;
-    color: black;
-    font-weight: 1;
+    color: rgb(54, 54, 54);
+    font-weight: lighter;
     text-align: center;
     padding: 120px;
 }
@@ -137,13 +153,13 @@ section {
 
 .discovery img {
     width: 60em;
-    height: 15em;
+    height: 100%;
     margin-left: 10em;
     margin-top: 100px;
 }
 
 article {
-    background-image: url('checked_menu.jpg');
+    background-image: url('/assets/checked_menu.jpg');
     background-size: cover;
     height: 43em;
     background-attachment: fixed;
@@ -190,7 +206,7 @@ article p span {
 }
 
 .info-container {
-    background-image: url('pattern-bg2.png');
+    background-image: url('/assets/pattern-bg2.png');
     color: rgb(51, 51, 51);
     display: flex;
     justify-content: space-between;
@@ -223,7 +239,7 @@ article p span {
 }
 
 .rating {
-    background-image: url('bg21.jpg');
+    background-image: url('/assets/bg21.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
@@ -255,20 +271,22 @@ article p span {
 }
 
 .countdown {
-    height: 32em;
-    background-image: url("bg5.jpeg");
+    height: 30em;
+    background-image: url("/assets/bg5.jpeg");
     display: flex;
     justify-content: space-between;
     color: black;
     padding: 157px;
 }
 
-/* .countdown .material-icons {
-    opacity: 0.3;
-} */
+.countdown .material-icons {
+    font-size: 60px;
+    color: rgb(126, 126, 126);
+    padding: 15px;
+}
 
 .numbers {
-    font-size: 65px;
+    font-size: 60px;
     font-weight: lighter;
 
 }
@@ -279,7 +297,7 @@ article p span {
 }
 
 .booking {
-    background-image: url("bg36.jpeg");
+    background-image: url("/assets/bg36.jpeg");
     height: 55em;
     display: flex;
     justify-content: space-between;
@@ -293,24 +311,26 @@ article p span {
     /* line-height: 1.2; */
 }
 
-.booking form{
+.booking form {
     padding: 80px;
     line-height: 4;
 }
 
-.form{
+.form {
     width: 400px;
     height: 50px;
     background-color: transparent;
     font-size: 15px;
     color: white;
-}
-
-.form:focus {
+    border: none;
     outline: none;
 }
 
-.booking hr{
+/* .form:focus {
+    outline: none;
+} */
+
+.booking hr {
     opacity: 0.3;
     /* width: 90px; */
 }
@@ -350,7 +370,7 @@ article p span {
 }
 
 .schedule i {
-    opacity: 0.4;
+    /* opacity: 0.4; */
     padding: 20px;
 }
 
@@ -361,14 +381,37 @@ footer {
     height: 10em;
 }
 
+footer img {
+    width: 100px;
+    height: 70px;
+    margin-top: 40px;
+    padding-left: 40px;
+}
+
+footer span {
+    display: flex;
+    margin-top: 50px;
+}
+
+footer .design {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
 footer ul {
     list-style-type: none;
     display: flex;
     gap: 1em;
-    /* opacity: 0.3; */
+    margin-top: 50px;
+    padding-right: 50px;
 }
 
-footer img {
-    width: 70px;
-    height: 70px;
+.social ul li a {
+    font-size: 30px;
+    color: rgb(110,110,110);
+}
+
+.social ul li a i:hover{
+    color: white;
 }
