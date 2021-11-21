@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Select-restaurant</title>
 </head>
 
@@ -16,7 +17,7 @@
 
     <div id="wrap">
         <nav>
-            <a href="#connect"><img class="logo" src="/assets/restaurant_logo.png" alt="logo"></a>
+            <a href="#connect"><img class="logo" src="assets/restaurant_logo.png" alt="logo"></a>
             <ul>
                 <li><a href="#our-story">Our Story</a></li>
                 <li><a href="#menu-Order">Menu</a></li>
@@ -24,6 +25,11 @@
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#bookAtable">Book a Table</a></li>
             </ul>
+
+           <div>
+            <i class="far fa-ellipsis-h"></i>
+           </div>
+
         </nav>
 
     </div>
@@ -38,28 +44,28 @@
         <div class="container">
 
             <div class="content">
-                <img src="/assets/post-img-food-1.jpeg" alt="food">
+                <img src="assets/post-img-food-1.jpeg" alt="food">
                 <p>Chips & Fish -</p>
                 <p><b>$7.99</b></p>
 
             </div>
 
             <div class="content">
-                <img src="/assets/post-img-food-2.jpeg" alt="food">
+                <img src="assets/post-img-food-2.jpeg" alt="food">
                 <p>Chef Salad -</p>
                 <p><b>$2.99</b></p>
 
             </div>
 
             <div class="content">
-                <img src="/assets/post-img-food-3.jpeg" alt="food">
+                <img src="assets/post-img-food-3.jpeg" alt="food">
                 <p>Grilled Steak -</p>
                 <p><b>$14.99</b></p>
 
             </div>
 
             <div class="content">
-                <img src="/assets/post-img-food-4.jpeg" alt="food">
+                <img src="assets/post-img-food-4.jpeg" alt="food">
                 <p>Roast Chicken-</p>
                 <p><b>$9.99</b></p>
 
@@ -69,33 +75,33 @@
         </div>
     </header>
 
-    <section id = 'our-story'>
+    <section id='our-story'>
         <div class="discovery">
             <h5>Discover Our Story</h5>
             <p>In our work we try to use only the most modern,
                 convenient and interesting <br>solutions.
                 We want the template you downloaded look unique and new for <br>such a long time as it is possible.</p>
-            <img src="/assets/discovery-bg.png" alt="buildings">
+            <img src="assets/discovery-bg.png" alt="buildings">
         </div>
     </section>
 
-    <article id = 'menu-Order'>
+    <article id='menu-Order'>
         <p><span>WHAT TO EAT?</span><br><b>ENJOY YOUR MENU</b></p>
         <p class="info">More than 250 dishes and 300 drinks for you.</p>
         <button class="menu"><i class="material-icons">menu_book</i>View Menu</button>
     </article>
 
-    <div id = 'features' class="info-container">
+    <div id='features' class="info-container">
         <ul>
             <li>
-                <img src="/assets/hot_food.png" alt="hot food">
+                <img src="assets/hot_food.png" alt="hot food">
                 <h5>Fully Responsive</h5>
                 <p>Your project looks great on any device.
                     Content can be easily read and a user understands freely what you wanted to say him or her.</p>
             </li>
 
             <li>
-                <img src="/assets/feature-food2.png" alt="food2">
+                <img src="assets/feature-food2.png" alt="food2">
                 <h5>PSD Is Included</h5>
                 <p>The graphic source file in PSD format is included in the archive.</p>
             </li>
@@ -104,7 +110,7 @@
 
         <ul>
             <li>
-                <img src="/assets/feature-food3.png" alt="food3">
+                <img src="assets/feature-food3.png" alt="food3">
                 <h5>Pure and Simple</h5>
                 <p>No fluff. Nothing should lead the visitor away from the main essence of website.
                     There must be just important information.
@@ -112,7 +118,7 @@
             </li>
 
             <li>
-                <img src="/assets/feature-food4.png" alt="food4">
+                <img src="assets/feature-food4.png" alt="food4">
                 <h5>Documentation</h5>
                 <p>The detailed documentation will help you in adjusting the project with little effort according to
                     your requirements.</p>
@@ -123,14 +129,14 @@
 
         <ul>
             <li>
-                <img src="/assets/feature-food5.png" alt="food5">
+                <img src="assets/feature-food5.png" alt="food5">
                 <h5>Color Schemes</h5>
                 <p>The set of ready made CSS files with different color schemes will help you in quick landing’s
                     adaptation according to your benchmark style.</p>
             </li>
 
             <li>
-                <img src="/assets/feature-food6.png" alt="food6">
+                <img src="assets/feature-food6.png" alt="food6">
                 <h5>Multiplatform</h5>
                 <p>The page is adapted to the most of the popular platform in segment.</p>
             </li>
@@ -140,11 +146,11 @@
 
     <div id='testimonials' class="rating">
         <ul>
-            <li><i class="material-icons" style="color:#ffd200; font-size:45px;">star_outline</i></i></li>
-            <li><i class="material-icons" style="color:#ffd200; font-size:45px;">star_outline</i></i></li>
-            <li><i class="material-icons" style="color:#ffd200; font-size:45px;">star_outline</i></i></li>
-            <li><i class="material-icons" style="color:#ffd200; font-size:45px;">star_outline</i></i></li>
-            <li><i class="material-icons" style="color:#ffd200; font-size:45px;">star_outline</i></i></li>
+            <li><i class="material-icons" style="color:#ffd200;">star_outline</i></i></li>
+            <li><i class="material-icons" style="color:#ffd200;">star_outline</i></i></li>
+            <li><i class="material-icons" style="color:#ffd200;">star_outline</i></i></li>
+            <li><i class="material-icons" style="color:#ffd200;">star_outline</i></i></li>
+            <li><i class="material-icons" style="color:#ffd200;">star_outline</i></i></li>
         </ul>
 
         <p>I always thought that people used to pay much for quality.
@@ -152,7 +158,7 @@
             everybody.
         </p>
 
-        <small>Tom Kross</small>
+        <p class="small">Tom Kross</p>
 
     </div>
 
@@ -183,7 +189,7 @@
 
     </div>
 
-    <div id = 'bookAtable' class="booking">
+    <div id='bookAtable' class="booking">
         <div class="book_a_table">
             <form>
                 <h2 class="book_title">Book a Table</h2>
@@ -205,14 +211,14 @@
                 solutions. We want the
                 template you<br>downloaded look unique and new for such a long time as it is<br>possible.</p>
             <div class="schedule">
-                <p><i class="material-icons" style="color:white; font-size: 30px;">schedule</i>10:00 - 23:00 (Mon - Sun)
+                <p><i class="material-icons" style="color:white; font-size: 31px;">schedule</i>10:00 - 23:00 (Mon - Sun)
                 </p>
-                <p><i class="material-icons" style="color:white; font-size: 30px;">location_on</i>300 Boylstone Ave E,
+                <p><i class="material-icons" style="color:white; font-size: 31px;">location_on</i>300 Boylstone Ave E,
                     Seattle WA</p>
-                <p><i class="material-icons" style="color:white; font-size: 30px;">phone_callback</i>732-555-1428
+                <p><i class="material-icons" style="color:white; font-size: 31px;">phone_callback</i>732-555-1428
                     (Callback)
                 </p>
-                <p><i class="material-icons" style="color:white; font-size: 30px;">email</i>your@email.com</p>
+                <p><i class="material-icons" style="color:white; font-size: 31px;">email</i>your@email.com</p>
 
             </div>
 
@@ -224,15 +230,14 @@
 
     <footer>
         <div class="design">
-            <img src="/assets/footer-logo.png" alt="select logo">
+            <img src="assets/footer-logo.png" alt="select logo">
             <span>&copy 2021 Select<br>Designed by Bloh_</span>
         </div>
-    
+
         <div class="social">
             <ul>
                 <li>
                     <a href="#"><i class='fab fa-twitter'></i></a>
-                    
                 </li>
                 <li>
                     <a href="#"><i class='fab fa-facebook'></i></a>
@@ -257,10 +262,11 @@
                 </li>
             </ul>
         </div>
-    
+
     </footer>
 
-
+    <script src="landing.js"></script>
 
 </body>
+
 </html>
