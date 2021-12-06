@@ -16,7 +16,7 @@
 <body>
 
     <div id="wrap">
-        <nav>
+        <nav class="nav-items hideNav hidden">
             <a href="#connect"><img class="logo" src="assets/restaurant_logo.png" alt="logo"></a>
             <ul>
                 <li><a href="#our-story">Our Story</a></li>
@@ -26,9 +26,14 @@
                 <li><a href="#bookAtable">Book a Table</a></li>
             </ul>
 
-           <div>
-            <i class="far fa-ellipsis-h"></i>
-           </div>
+            
+            <!-- <div class="hamburger-menu">
+                <button class="btn-nav">
+                    <span class="icon-bar top"></span>
+                    <span class="icon-bar middle"></span>
+                    <span class="icon-bar bottom"></span>
+                </button>
+            </div> -->
 
         </nav>
 
@@ -86,9 +91,13 @@
     </section>
 
     <article id='menu-Order'>
-        <p><span>WHAT TO EAT?</span><br><b>ENJOY YOUR MENU</b></p>
-        <p class="info">More than 250 dishes and 300 drinks for you.</p>
-        <button class="menu"><i class="material-icons">menu_book</i>View Menu</button>
+        <div class="menuArticle">
+            <p><span>WHAT TO EAT?</span><br><b>ENJOY YOUR MENU</b></p>
+            <p class="info">More than 250 dishes and 300 drinks for you.</p>
+            <button id="menu"><i class="material-icons">menu_book</i>View Menu</button></div>
+
+        <div id="menu-image">
+            <img src="assets/menuPage.jpeg" alt="menu list"></div>
     </article>
 
     <div id='features' class="info-container">
